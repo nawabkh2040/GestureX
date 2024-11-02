@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detection.css') }}">
+    <title>Object Detection</title>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <img id="video" src="{{ url_for('video_feed') }}" class="responsive-video">
+        </div>
+        <div class="controls">
+            <button id="start-btn">Start Detection</button>
+            <button id="stop-btn" disabled>Stop Detection</button>
+            <div class="detection-area">
+                <textarea id="current-detection" rows="2" cols="30" placeholder="Current Detection..."></textarea>
+                <!-- Speaker icon for text-to-speech -->
+                <button id="speak-btn" title="Speak Detection">&#128266;</button> <!-- Unicode for speaker icon -->
+            </div>
+            <textarea id="detection-log" rows="10" cols="30" placeholder="Detection Log..."></textarea>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/detection.js') }}"></script>
+</body>
+</html>

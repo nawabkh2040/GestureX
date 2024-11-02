@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestureX</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Gesture <span class="highlight">X</span></h1>
+                </div>
+                <div class="navbar-list">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <!-- <li><a href="#">Pricing</a></li> -->
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <a href="./login.html" class="login-btn">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="hero">
+            <div class="text-content">
+                <div class="custom-button">Welcome GestureX</div>
+                <h2 class="Ai-Powered">AI-Powered Real Time Translator Built With <span class="highlight">A Human Approach</span>.
+                </h2>
+                <a href="/detection" style="" ><button class="cta-btn">Try Now</button></a>
+            </div>
+            <div class="hero-image">
+                <div class="images">
+                    <img class="robot-image" src="{{ url_for('static', filename='assets/Illustration.png') }}" alt="Robot and Human Handshake Illustration">
+                    <img class="ellipse-image" src="{{ url_for('static', filename='assets/Ellipse 1.png') }}" alt="Ellipse">
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <h2 class="product-section-title">Our Product</h2>
+            <div class="product-description-container">
+                <p class="product-description">
+                    GestureX is a revolutionary language translation app that breaks down communication barriers by
+                    providing real-time translation for both spoken and sign languages. With its advanced algorithms and
+                    user-friendly interface, GestureX enables seamless communication between individuals from diverse
+                    linguistic backgrounds.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <h2 class="menu-heading">What do you want us to do:</h2>
+    <div class="menu"></div>
+    <div class="menu-cards">
+        <div class="cards" data-aos="flip-left">
+            <div class="menu-images">
+                <img src="{{ url_for('static', filename='assets/m1.png') }}" class="menu-img">
+            </div>
+            <div class="option card-heading">Speech Translation</div>
+            <p>Translate speech into multiple languages, including regional dialects, for inclusive communication.</p>
+        </div>
+
+        <div class="cards" data-aos="flip-right">
+            <div class="menu-images">
+                <img src="{{ url_for('static', filename='assets/m2.png') }}" class="menu-img">
+            </div>
+            <div class="option card-heading">Multiple Language</div>
+            <p>Convert sign language into multiple languages instantly, fostering effortless communication.</p>
+        </div>
+
+        <div class="cards" data-aos="flip-right">
+            <div class="menu-images">
+                <img src="{{ url_for('static', filename='assets/m3.png') }}" class="menu-img">
+            </div>
+            <div class="option card-heading">Sign to Speech</div>
+            <p>Instantly translate sign language into spoken words, fostering inclusive communication.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Other Sections -->
+<section class="camera-section" data-aos="zoom-in">
+    <div class="webcam-container">
+        <div class="webcam"></div>
+        <div class="webcam-btn">
+            <button class="start-btn">Start Detection</button>
+            <button class="stop-btn">Stop Detection</button>
+        </div>
+    </div>
+    <div class="box">
+        <button class="language-btn">Language:
+            <select>
+                <option name="Eng" id="">English</option>
+                <option name="Eng" id="">Hindi</option>
+            </select>
+        </button>
+        <h2>Detection Logs</h2>
+        <div class="translation-box"></div>
+        <p>Reset</p>
+        <i id="reset" class="fa-solid fa-rotate-left"></i>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container3">
+        <div class="foot-sec1">
+            <h1>Gesture <span class="highlight">X</span></h1>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> gesturexsdct@.com</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> 98524 88841</p>
+        </div>
+        <div class="foot-sec2">
+            <h2>Further Information</h2>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Communities</a>
+        </div>
+        <div class="foot-sect-4">
+            <h2>Our Address</h2>
+            <span class="address"><i class="fas fa-location-dot"></i> SDBCT, Umariya,<br>Rau, Indore, MP</span>
+        </div>
+        <div class="foot-sec3">
+            <h2>Follow Us</h2>
+            <div class="logo-section">
+                <a href="https://github.com/Chetan2520"><i class="fab fa-github "></i></a>
+                <a href="https://www.instagram.com/mr_manker_01/"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.linkedin.com/in/chetan-manker-743956256/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mr_manker_01/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mr_manker_01/"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/mr_manker_01/"><i class="fab fa-instagram "></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 500,
+        duration: 1000
+    });
+</script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
