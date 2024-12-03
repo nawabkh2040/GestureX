@@ -101,7 +101,7 @@ flowchart TD
 | /multilingual       | POST   | Translates detected text into languages   |
 | /upload_model       | POST   | Uploads a custom model for detection      |
 | /history            | GET    | Retrieves gesture detection history       |
-
+```plaintext
 ### Project Structure
 
 GestureX/
@@ -114,6 +114,8 @@ GestureX/
 ├── static/                # CSS, JavaScript, and images                     
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
+
+```
 ### Contributing
 We welcome contributions to improve GestureX! Here’s how you can contribute:
 
