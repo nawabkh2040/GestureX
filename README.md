@@ -29,6 +29,27 @@ GestureX enables users to detect and translate Indian Sign Language gestures int
 - *User -Friendly Interface*: Simple, responsive web interface for all users.
 
 ---
+## Flowchart
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Initialize Camera]
+    B --> C[Capture Frame]
+    C --> D{Is Frame Captured?}
+    D -- Yes --> E[Pre-process Image]
+    D -- No --> F[Show Error Message]
+    E --> G[Run Object Detection Model]
+    G --> H{Is Detection Confidence > 0.70?}
+    H -- Yes --> I[Classify Gesture]
+    H -- No --> J[Show No Detection]
+    I --> K[Display Gesture with Bounding Box]
+    J --> K
+    K --> L[Display Detection Result]
+    L --> M[End]
+    F --> M
+```
+
+---
 
 ## Technology Stack
 
